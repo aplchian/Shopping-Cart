@@ -1,0 +1,286 @@
+.bgPic {
+
+
+	background: url("img/bg.png") no-repeat center center fixed;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	position: absolute;
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+}
+
+.blurry {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(22,22,22,0.35);
+	z-index: 2;
+}
+
+.modal {
+	position: absolute;
+	height: 550px;
+	width: 680px;
+	background-color: white;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 3;
+
+}
+
+.header {
+	height: 40px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid rgba(151,151,151,.20);
+}
+
+h1#checkout {
+	font-family: .HelveticaNeueDeskInterface-Regular;
+	font-size: 18px;
+	color: #5E5F5F;
+	margin: 9px 0 0 20px;
+	display: inline-block;
+}
+
+ul.checkoutNav li {
+	display: inline-block;
+	opacity: 0.5;
+	font-family: .HelveticaNeueDeskInterface-Regular;
+	font-size: 12px;
+	color: #9C9C9C;
+}
+
+ul.checkoutNav li.selected {
+	opacity: 1;
+}
+
+ul.checkoutNav {
+	display: inline-block;
+	margin: 0;
+	padding-left: 10px;
+}
+
+
+.exit {
+	position: absolute;
+	top: 12px;
+	right: 18px;
+}
+
+.paymentContainer {
+	width: 352px;
+	background-color: white;
+	height: 508px;
+	margin-left: 12px;
+	float: left;
+
+}
+
+.cartContainer {
+	width: 316px;
+	height: 509px;
+	background-color: #FAFAFA;
+	float: right;
+}
+
+h1#wallet {
+font-family: .HelveticaNeueDeskInterface-Regular;
+font-size: 16px;
+color: #777879;
+margin: 6px 0 7px 0;
+}
+
+.cardContainer {
+	width: 109px;
+	height: 96px;
+	float: left;
+	margin-right: 9.5px
+
+}
+
+.cardContainer#selected {
+	width: 109px;
+	height: 96px;
+	background: #F5F9FD;
+	border: 1px solid #D1E2F6;
+	border-radius: 3px;
+	float: left;
+	margin-right: 9.5px
+
+}
+
+.cardContainer:hover {
+	background: #F5F9FD;
+	border: 1px solid #D1E2F6;
+	border-radius: 3px;
+}
+
+.cardContainer img {
+	margin: 12px 0 9px 17px;
+}
+
+.cardContainer p {
+	font-family: .HelveticaNeueDeskInterface-Regular;
+	font-size: 12px;
+	color: #C6C6C6;
+	margin: 0;
+	text-align: center;
+}
+
+.cardContainer#selected p {
+	opacity: 0.69;
+	font-family: .HelveticaNeueDeskInterface-Regular;
+	font-size: 12px;
+	color: #777879;
+	margin: 0;
+	text-align: center;
+}
+
+.cardContainer:last-child {
+	margin-right: 0;
+}
+
+.newCardContainer {
+	border-top: 1px solid rgba(151,151,151,.20);
+	position: absolute;
+	top: 206px;
+	width: 353px;
+	}
+
+#newCard {
+	font-family: .HelveticaNeueDeskInterface-Regular;
+	font-size: 16px;
+	color: #777879;
+	background-color: white;
+	display: inline-block;
+	margin: 0;
+	top: -9px;
+	position: absolute;
+	margin-left: 5px;
+	padding: 0 5px 0 5px;
+}
+
+form {
+	width: 270px;
+	height: 219px;
+	margin-left: 36px;
+}
+
+input.txtInput {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 25px;
+	font-family: .HelveticaNeueDeskInterface-Regular;
+	font-size: 14px;
+	color: #C4CBD0;
+
+}
+
+input:first-child {
+	margin-top: 32px;
+}
+
+input#expDate {
+	width: 149px;
+	display: inline-block;
+	margin-right: 25px;
+
+}
+
+input#cvc {
+	width: 73px;
+}
+
+
+.addWalletTxt {
+	font-family: .HelveticaNeueDeskInterface-Regular;
+	font-size: 14px;
+	color: #777879;
+	line-height: 13px;
+	margin-left: 7px;
+}
+
+button {
+	width: 289px;
+	height: 44px;
+	margin-top: 70px;
+	background: #8BD638;
+	border-radius: 2px;
+	font-family: .HelveticaNeueDeskInterface-Regular;
+	font-size: 16px;
+	color: #FFFFFF;
+	border: none;
+	margin-left: 26px;
+}
+
+
+.productName {
+	font-family: .HelveticaNeueDeskInterface-Regular;
+	font-size: 12px;
+	color: #777879;
+	margin: 10px 0 2px 0;
+	
+}
+
+.productDescription, .productQuantity {
+	font-family: .HelveticaNeueDeskInterface-Regular;
+	font-size: 10px;
+	color: #9C9C9C;
+	margin: 0 0 2px 0;
+	
+}
+
+.cartItem {
+	height: 67px;
+	width: 283px;
+	border-top: 1px solid rgba(151,151,151,.20);
+	margin-left: 5px;
+	margin-top: 16px;
+}
+
+/*.cartItem:first-child {
+	border-top: none;
+}*/
+
+.cartItem img {
+	margin-top: 10px;
+	float: left;
+	margin-right: 6px;
+
+}
+
+table#costs, table#totalTable {
+	border-top: 1px solid rgba(151,151,151,.20);
+	width: 271px;
+	font-family: .HelveticaNeueDeskInterface-Regular;
+	font-size: 12px;
+	color: #777879;
+	padding-top: 12px;
+	margin-left: 12px;
+
+}
+
+ td {
+	margin-bottom: 5px;
+}
+
+.tblCosts {
+	text-align: right;
+
+}
+
+.costContainer {
+	position: absolute;
+	bottom: 18px;
+}
+
+

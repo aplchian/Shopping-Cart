@@ -1,0 +1,106 @@
+
+<!doctype html>
+	<head>
+		<link rel="stylesheet" type="css/text" href="style.css">
+		<title>Wallet Practice</title>
+	</head>
+
+	<body>
+		<div class="bgPic"></div>
+		<div class="blurry"></div>
+		<div class="modal">
+			<div class="header">
+				<h1 id="checkout">Checkout</h1>
+				<ul class="checkoutNav">
+					<li>Shipping ></li>
+					<li class="selected">Payment Method ></li>
+					<li>Confirmation</li>
+				</ul>
+				<a src="#"><img class="exit" src="img/exit.png"></a>
+
+			</div>
+			<div class="paymentContainer">
+				<div class="walletContainer">
+					<h1 id="wallet">Wallet</h1>
+					<div class="cardContainer" id="selected">
+						<img src="img/visa.png">
+						<p class="endingIn">Ending in 1234</p>
+					</div>
+					<div class="cardContainer">
+						<img src="img/mastercard.png">
+						<p class="endingIn">Ending in 1234</p>
+					</div>
+					<div class="cardContainer">
+						<img src="img/discover.png">
+						<p class="endingIn">Ending in 1234</p>
+					</div>
+
+				</div>
+				<div class="newCardContainer">
+					<h1 id="newCard">New Card</h1>
+					<form method="get" id="form1">
+						<input class="txtInput" type="text" placeholder="Name on Card"/>
+						<input class="txtInput" type="number" placeholder="1111-111-1111"/>
+						<input class="txtInput" id="expDate" type="number" placeholder="MM/YY"/>
+						<input class="txtInput" id="cvc" type="number" placeholder="CVC"/>
+						<input type="checkbox" name="" value="Add Card to Wallet"><span class="addWalletTxt">Add Card to Wallet</span>
+					</form>
+					<button type="submit" form="form1" value="Submit">Continue</button>
+
+				</div>
+			</div>
+			<div class="cartContainer">
+				<div class="cartItem">
+					<img src="img/item1.png">
+					<h3 class="productName">The Chelsea Boot</h3>
+					<h3 class="productDescription">Black</h3>
+					<h3 class="productQuantity">Quanity: 1</h3>
+				</div>
+				<div class="cartItem">
+					<img src="img/item2.png">
+					<h3 class="productName">Twill Backpack</h3>
+					<h3 class="productDescription">Reverse Denim</h3>
+					<h3 class="productQuantity">Quanity: 1</h3>
+				</div>
+				<div class="cartItem">
+					<img src="img/item3.png">
+					<h3 class="productName">Twill Tote</h3>
+					<h3 class="productDescription">Denim + Black Leather</h3>
+					<h3 class="productQuantity">Quanity: 1</h3>
+				</div>
+				<div class="cartItem">
+					<img src="img/item4.png">
+					<h3 class="productName">Chunck Wool Scarf</h3>
+					<h3 class="productDescription">Black</h3>
+					<h3 class="productQuantity">Quanity: 1</h3>
+				</div>
+				<div class="costContainer">
+					<table id="costs">
+						<tr>
+							<td>Subtotal</td>
+							<td class="tblCosts">$398</td>
+						</tr>
+						<tr>
+							<td>Shipping</td>
+							<td class="tblCosts">Free</td>
+						</tr>
+						<tr>
+							<td>Taxes</td>
+							<td class="tblCosts">$12.12</td>
+						</tr>
+					</table>
+					<table id="totalTable">
+						<tr>
+							<td>Total</td>
+							<td class="tblCosts">$410.12</td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+
+</html>
