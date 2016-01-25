@@ -1,6 +1,4 @@
 .bgPic {
-
-
 	background: url("img/bg.png") no-repeat center center fixed;
 	background-size: cover;
 	top: 0;
@@ -246,10 +244,6 @@ button {
 	margin-left: 5px;
 	margin-top: 16px;
 }
-
-/*.cartItem:first-child {
-	border-top: none;
-}*/
 
 .cartItem img {
 	margin-top: 10px;
